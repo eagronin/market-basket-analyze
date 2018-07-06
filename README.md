@@ -34,7 +34,7 @@ itemFrequencyPlot(trans, topN=10, type='absolute'
                   , col = "blue", cex.axis = 0.8, cex.main=1.5, cex.lab = .8, cex.names = 0.8)
 ```
 
-Finally, we use the arules package to run the apriori algorithm and output the results:
+Finally, we use the arules package to run the apriori algorithm for the minimum support of 0.005 and minimum confidence of 0.95, and output the results:
 
 ```R
 rules = apriori(trans, parameter = list(supp=0.005, conf=0.95))
