@@ -24,7 +24,7 @@ wide[is.na(wide)] = FALSE.           # clean up the missing values to be FALSE
 colnames(wide) = gsub(x=colnames(wide), pattern="const\\.", replacement="")    # clean up column names
 ```
 
-After executing the above code, we are ready to convert the dataset into transaction fromat.  The code below converts the reshaped dataset into transactions format and outputs a frequency plot showing the number of purchases of the top 10 items.  The plot is shown in the [next section](https://eagronin.github.io/market-basket-report/). 
+After executing the above code, we are ready to convert the dataset into transaction fromat.  The code below performs this conversion and outputs a frequency plot showing the number of purchases of the top 10 items.  The plot is shown in the [next section](https://eagronin.github.io/market-basket-report/). 
 
 ```R
 library(arules)
